@@ -1,0 +1,220 @@
+@font-face{
+    font-family: "Montserrat Medium";
+    src: url("font/Montserrat-Medium.otf");
+}
+
+html{
+    font-family: "Montserrat Medium" ;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.bar{
+    width: 100vw;
+    height: auto;
+    background-image: url("images/bandeau.jpg");
+}
+
+.tete{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    color: dimgray;
+    padding-top: 80px;
+    display: grid;
+}
+
+.ariane{
+    max-width: 1200px;
+    padding-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+a{
+    text-decoration: none;
+    color: dimgray;
+}
+
+.arianeText{
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.arianeText li{
+    display:inline-block;
+    vertical-align: middle;
+}
+
+h1{
+    max-width: 1200px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: ghostwhite;
+    font-size: 40px;
+}
+
+.contents{
+    padding: 0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contents{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 0.8em;
+}
+
+.contents > li{
+    background: darkseagreen;
+    overflow: auto;
+    min-width: 0;
+    padding: 1em;
+}
+
+.title{
+    text-align: left;
+    font-size: 20px;
+}
+
+.box{
+    border: solid 1px gray;
+}
+
+.imagebox{
+    width: 100%;
+    height: auto;
+}
+
+.textContent{
+    padding: 15px;
+}
+
+.bottom{
+
+}
+
+.menuBar{
+    width: 50%;
+    height: auto;
+}
+
+#nav{
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 50px;
+}
+
+#nav li{
+    text-align: center;
+    float: left;
+    width: 120px;
+
+}
+
+#logoTotal{
+    width: 180px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+#logoTotal .logo{
+    padding-right: 15px;
+    float: left;
+}
+
+#logoTotal .logoText{
+    overflow: hidden;
+}
+
+.logo{
+    width: 40px;
+    height: auto;
+    vert-align: middle;
+}
+
+.logoText{
+    margin: 0;
+    padding: 0;
+    vert-align: middle;
+}
+
+.textLogoTitre{
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.textLogoContenu{
+   font-size: 15px;
+    text-align: center;
+ }
+
+#logoTotal{
+    vert-align: middle;
+}
+
+
+@media screen and (min-width:600px) and (max-width: 5000px){
+    .menuBar{
+        display: none;
+    }
+
+    .portable{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 599px){
+    .tete{
+        background-color: deepskyblue;
+    }
+
+    #nav .li{
+        display: none;
+    }
+
+    .portable{
+        color:black;
+        font-weight: bold;
+        text-align: left;
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .portable li{
+        padding-bottom: 30px;
+    }
+
+    #logoTotal{
+        display: inline-block;
+        vertical-align:middle ;
+    }
+
+    .menuBar{
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+
+}
